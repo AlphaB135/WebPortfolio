@@ -1,0 +1,185 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #202020;
+    font-family: "Kanit", serif;
+    font-weight: 500;
+    font-style: bold;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    /* border-radius: 10px; */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #ff672b;
+}
+
+header .subtitle {
+    font-size: 1rem;
+    color: #666;
+}
+
+.image-container {
+    text-align: center;
+    top: 10px;
+    margin-bottom: 1px;
+}
+
+.image-container img {
+    width: 90%;
+    max-width: 836px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+.ingredients, .instructions {
+    margin-bottom: 20px;
+}
+
+.ingredients h2, .instructions h2 {
+    font-size: 1.5rem;
+    color: #ff672b;
+    border-bottom: 2px solid #ff672b;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+/* ฟกหก */
+
+/* ฟห */
+
+.instructions img {
+    border-radius: 5px;
+    margin-left: 20px; /* เพิ่มช่องว่างระหว่างรูปกับข้อความ */
+    margin-right: 0; /* ไม่มีช่องว่างเกินทางขวา */
+    width: 50%; /* กำหนดความกว้างของรูป */
+    max-width: 250; /* กำหนดขนาดสูงสุดของรูป */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* เพิ่มเงารูป */
+    
+}
+
+table {
+    
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table, th, td {
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #ff672b;
+    color: #fff;
+}
+
+.tip {
+    color: #ff672b;
+    font-style: italic;
+}
+
+ol {
+    margin-left: 20px;
+}
+
+ol li {
+    margin-bottom: 10px;
+}
+
+
+/* ส่วนคอมเมนต์หลัก */
+.comment-section {
+    margin-top: 30px;
+    padding: 20px;
+    background: #f5f5f7; /* สีพื้นหลังสไตล์ Apple */
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.comment-section h2 {
+    font-size: 1.8rem;
+    color: #1d1d1f; /* สีเทาเข้มสไตล์ Apple */
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* แบบฟอร์มคอมเมนต์ */
+.comment-form textarea {
+    left: 10px;;
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #d2d2d7; /* ขอบแบบเรียบ */
+    border-radius: 12px;
+    font-size: 1rem;
+    background: #ffffff; /* สีขาวสะอาด */
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); /* เงาเบา */
+    transition: box-shadow 0.2s ease, border-color 0.2s ease;
+    font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.comment-form textarea:focus {
+    border-color: #007aff; /* ขอบสีน้ำเงินสไตล์ Apple */
+    box-shadow: 0 0 8px rgba(0, 122, 255, 0.3); /* เงาเมื่อโฟกัส */
+    outline: none;
+}
+
+.comment-form button {
+    background: linear-gradient(to bottom, #ffffff, #f1f1f1); /* ปุ่มแบบ Gradient */
+    border: 1px solid #d2d2d7;
+    border-radius: 12px;
+    color: #ff672b; /* สีตัวอักษร */
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+    font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.comment-form button:hover {
+    background: linear-gradient(to bottom, #e5e5ea, #d2d2d7); /* เปลี่ยนสีปุ่มเมื่อ Hover */
+    border-color: #c7c7cc;
+}
+
+.comment {
+    background: #ffffff;
+    border: 1px solid #d2d2d7;
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.comment .comment-text {
+    color: #1d1d1f;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+
