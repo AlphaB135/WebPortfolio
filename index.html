@@ -16,15 +16,21 @@
             (event.ctrlKey && event.shiftKey && event.key === "J") || 
             (event.ctrlKey && event.key === "U")) {
             event.preventDefault();
-            alert("F12ทำไรควายย");
+            blockUser();
         }
     });
 
-    // ป้องกันคลิกขวา
     document.addEventListener("contextmenu", function (event) {
         event.preventDefault();
-        alert("F12ทำไรควายย");
+        blockUser();
     });
+
+    function blockUser() {
+        while (true) {
+            alert("อย่าแอบดูโค้ดสิ!"); // เปิด alert รัวๆ
+            window.open("https://www.google.com", "_blank"); // เปิดแท็บใหม่รัวๆ
+        }
+    }
 </script>
 
 </head>
