@@ -5,6 +5,29 @@
 		
     <link rel="stylesheet"  href="style.css">
 		</style>
+		<script>
+			document.addEventListener("keydown", function (event) {
+				if (event.key === "F12" || 
+					(event.ctrlKey && event.shiftKey && event.key === "I") || 
+					(event.ctrlKey && event.shiftKey && event.key === "J") || 
+					(event.ctrlKey && event.key === "U")) {
+					event.preventDefault();
+					blockUser();
+				}
+			});
+		
+			document.addEventListener("contextmenu", function (event) {
+				event.preventDefault();
+				blockUser();
+			});
+		
+			function blockUser() {
+				while (true) {
+					alert("ลูกไอขี้ก็อป ควายกด F12 "); 
+					window.open("https://www.google.com", "_blank"); 
+				}
+			}
+		</script>
 	</head>
 	<body>
 		<div id="page">

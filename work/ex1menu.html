@@ -4,6 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basic html</title>
+    <script>
+        document.addEventListener("keydown", function (event) {
+            if (event.key === "F12" || 
+                (event.ctrlKey && event.shiftKey && event.key === "I") || 
+                (event.ctrlKey && event.shiftKey && event.key === "J") || 
+                (event.ctrlKey && event.key === "U")) {
+                event.preventDefault();
+                blockUser();
+            }
+        });
+    
+        document.addEventListener("contextmenu", function (event) {
+            event.preventDefault();
+            blockUser();
+        });
+    
+        function blockUser() {
+            while (true) {
+                alert("ลูกไอขี้ก็อป ควายกด F12 "); 
+                window.open("https://www.google.com", "_blank"); 
+            }
+        }
+    </script>
 </head>
 <body>
     <h1>ต้มยำกุ้งน้ำข้น</h1>
