@@ -3,132 +3,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atsadawut Portfolio</title>
-    <link rel="stylesheet" href="src/output.css">
-    <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
-    </style>
-
-<script>
-    document.addEventListener("keydown", function (event) {
-        if (event.key === "F12" || 
-            (event.ctrlKey && event.shiftKey && event.key === "I") || 
-            (event.ctrlKey && event.shiftKey && event.key === "J") || 
-            (event.ctrlKey && event.key === "U")) {
-            event.preventDefault();
-            blockUser();
-        }
-    });
-
-    document.addEventListener("contextmenu", function (event) {
-        event.preventDefault();
-        blockUser();
-    });
-
-    function blockUser() {
-        while (true) {
-            alert("ลูกไอขี้ก็อป ควายกด F12 "); 
-            window.open("https://www.google.com", "_blank"); 
-        }
-    }
-</script>
-
-</head>
-<body class="bg-white text-black font-light">
+    <title>Atsadawut - Tailwind</title>
     
-    <!-- Navbar -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script> /* กันก็อฟ */
+        window.addEventListener("load", function () {
+            setTimeout(() => {
+                document.getElementById("profile-pic").classList.remove("opacity-0");
+            }, 500);
+        });
+        
+        document.addEventListener("keydown", function (event) {
+            if (event.key === "F12" || 
+                (event.ctrlKey && event.shiftKey && event.key === "I") || 
+                (event.ctrlKey && event.shiftKey && event.key === "J") || 
+                (event.ctrlKey && event.key === "U")) {
+                event.preventDefault();
+                alert("ขี้ก็อป");
+                setTimeout(() => { window.location.href = "about:blank"; }, 500);
+            }
+        });
 
-    <!-- ขี้ก๊อปอะเราทำเองมั้ง --><!-- ขี้ก๊อปอะเราทำเองมั้ง --><!-- ขี้ก๊อปอะเราทำเองมั้ง --><!-- ขี้ก๊อปอะเราทำเองมั้ง --><!-- ขี้ก๊อปอะเราทำเองมั้ง --><!-- ขี้ก๊อปอะเราทำเองมั้ง -->
-<!-- ขี้ก๊อปอะเราทำเองมั้ง --><!-- ขี้ก๊อปอะเราทำเองมั้ง --><!-- ขี้ก๊อปอะเราทำเองมั้ง --><!-- ขี้ก๊อปอะเราทำเองมั้ง --><!-- ขี้ก๊อปอะเราทำเองมั้ง --><!-- ขี้ก๊อปอะเราทำเองมั้ง -->
-<!-- ขี้ก๊อปอะเราทำเองมั้ง --><!-- ขี้ก๊อปอะเราทำเองมั้ง --><!-- ขี้ก๊อปอะเราทำเองมั้ง --><!-- ขี้ก๊อปอะเราทำเองมั้ง --><!-- ขี้ก๊อปอะเราทำเองมั้ง --><!-- ขี้ก๊อปอะเราทำเองมั้ง -->
-<!-- ขี้ก๊อปอะเราทำเองมั้ง --><!-- ขี้ก๊อปอะเราทำเองมั้ง --><!-- ขี้ก๊อปอะเราทำเองมั้ง --><!-- ขี้ก๊อปอะเราทำเองมั้ง --><!-- ขี้ก๊อปอะเราทำเองมั้ง --><!-- ขี้ก๊อปอะเราทำเองมั้ง -->
-<!-- ขี้ก๊อปอะเราทำเองมั้ง --><!-- ขี้ก๊อปอะเราทำเองมั้ง --><!-- ขี้ก๊อปอะเราทำเองมั้ง --><!-- ขี้ก๊อปอะเราทำเองมั้ง --><!-- ขี้ก๊อปอะเราทำเองมั้ง --><!-- ขี้ก๊อปอะเราทำเองมั้ง -->
-<!-- ขี้ก๊อปอะเราทำเองมั้ง --><!-- ขี้ก๊อปอะเราทำเองมั้ง --><!-- ขี้ก๊อปอะเราทำเองมั้ง --><!-- ขี้ก๊อปอะเราทำเองมั้ง --><!-- ขี้ก๊อปอะเราทำเองมั้ง --><!-- ขี้ก๊อปอะเราทำเองมั้ง -->
-<!-- ขี้ก๊อปอะเราทำเองมั้ง --><!-- ขี้ก๊อปอะเราทำเองมั้ง --><!-- ขี้ก๊อปอะเราทำเองมั้ง --><!-- ขี้ก๊อปอะเราทำเองมั้ง --><!-- ขี้ก๊อปอะเราทำเองมั้ง --><!-- ขี้ก๊อปอะเราทำเองมั้ง -->
-<!-- ขี้ก๊อปอะเราทำเองมั้ง --><!-- ขี้ก๊อปอะเราทำเองมั้ง --><!-- ขี้ก๊อปอะเราทำเองมั้ง --><!-- ขี้ก๊อปอะเราทำเองมั้ง --><!-- ขี้ก๊อปอะเราทำเองมั้ง --><!-- ขี้ก๊อปอะเราทำเองมั้ง -->
-
-    <div class="flex justify-between items-center px-10 py-6 fixed w-full top-0 bg-white/90 backdrop-blur-md shadow-sm z-50">
-        <h1 class="text-2xl font-medium">Atsadawut</h1>
-        <ul class="hidden md:flex space-x-8 text-lg">
-            <li><a href="#home" class="hover:opacity-50 scroll-link">Home</a></li>
-            <li><a href="#portfolio" class="hover:opacity-50 scroll-link">Portfolio</a></li>
-            <li><a href="#contact" class="hover:opacity-50 scroll-link">Contact</a></li>
-        </ul>
-    </div>
-
-    <!-- Hero Section -->
-    <section id="home" class="h-screen flex flex-col justify-center items-center text-center px-4">
-        <img src="https://scontent.furt3-1.fna.fbcdn.net/v/t39.30808-6/451351985_1636110373599519_6999807592954446378_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeHEnB0wP3z2XQbmFIpHuUdDk4iQM_FbD72TiJAz8VsPvfEubuEWDudEOhDmjbC76FsGaWcuvmulcqSxeHQloGSi&_nc_ohc=lQgOyXpjk-IQ7kNvgHm2KJf&_nc_oc=Adjilbc4MmzgJA2aoS7Uez8SVtm0hvFGVWh7d69GfKi5IbDlISKoq-ncP88puticyUE&_nc_zt=23&_nc_ht=scontent.furt3-1.fna&_nc_gid=AhSJRpsGJzWQYGz91GbOPYK&oh=00_AYCtdE37H3bHwTbRFxmpJvt-XnrITlTQVzyrZFstNoVvmw&oe=67AC06EB" alt="Atsadawut" class="w-40 h-40 rounded-full mb-4">
-        <h2 class="text-6xl font-semibold">I am Atsadawut</h2>
-        <p class="text-lg text-gray-500 mt-4">Programmer | Designer | Data Enthusiast</p>
-        <button class="mt-6 px-8 py-3 bg-black text-white font-medium rounded-lg hover:opacity-80 transition">Explore</button>
-    </section>
-
-    <!-- Portfolio Section -->
-    <div id="portfolio" class="py-20 px-8">
-        <h2 class="text-4xl font-medium text-center mb-10">My Work</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <a href="work/ex1menu.html" class="bg-gray-100 rounded-xl p-6 block">
-                <img src="https://d3h1lg3ksw6i6b.cloudfront.net/media/image/2023/04/24/5608757681874e1ea5df1aa41d5b2e3d_How_To_Make_Tom_Yam_Kung_The_Epitome_Of_Delicious_And_Nutritious_Thai_Cuisine3.jpg" alt="menu" class="rounded-lg mb-4">
-                <h3 class="text-xl font-medium">MENU HTML</h3>
-                <p class="text-gray-500 mt-2">เขียนเว็บด้วย HTML</p>
-            </a>
-            <a href="work/ex2Form.html" class="bg-gray-100 rounded-xl p-6 block">
-                <img src="https://st3.depositphotos.com/3591429/12864/i/950/depositphotos_128642652-stock-photo-people-filling-application-form.jpg" alt="form" class="rounded-lg mb-4">
-                <h3 class="text-xl font-medium">FORM HTML + CSS</h3>
-                <p class="text-gray-500 mt-2">การออกแบบฟรอมด้วย CSS</p>
-            </a>
-            <a href="work/ex3Box_Model.html" class="bg-gray-100 rounded-xl p-6 block">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Boxmodell-detail.png" alt="Box model" class="rounded-lg mb-4">
-                <h3 class="text-xl font-medium">Box Model</h3>
-                <p class="text-gray-500 mt-2">การออกแบบเลเอาท์ด้วย Box Model</p>
-            </a>
-            <a href="work/ex4menubuty.html" class="bg-gray-100 rounded-xl p-6 block">
-                <img src="https://d3h1lg3ksw6i6b.cloudfront.net/media/image/2023/04/24/5608757681874e1ea5df1aa41d5b2e3d_How_To_Make_Tom_Yam_Kung_The_Epitome_Of_Delicious_And_Nutritious_Thai_Cuisine3.jpg" alt="Box model" class="rounded-lg mb-4">
-                <h3 class="text-xl font-medium">Data Analysis</h3>
-                <p class="text-gray-500 mt-2">Turning data into insights.</p>
-            </a>
-            <a href="work/ex4menubuty.html" class="bg-gray-100 rounded-xl p-6 block">
-                <img src="https://d3h1lg3ksw6i6b.cloudfront.net/media/image/2023/04/24/5608757681874e1ea5df1aa41d5b2e3d_How_To_Make_Tom_Yam_Kung_The_Epitome_Of_Delicious_And_Nutritious_Thai_Cuisine3.jpg" alt="Box model" class="rounded-lg mb-4">
-                <h3 class="text-xl font-medium">Data Analysis</h3>
-                <p class="text-gray-500 mt-2">Turning data into insights.</p>
-            </a>
+        document.addEventListener("contextmenu", function (event) {
+            event.preventDefault();
+            alert("ขี้ก็อป");
+            setTimeout(() => { window.location.href = "about:blank"; }, 500);
+        });
+    </script>
+</head>
+<body id="top" class="bg-gray-100 text-gray-900">
+    <div id="preloader" class="fixed inset-0 flex items-center justify-center bg-gray-900 z-50 opacity-100 transition-opacity duration-700 ease-in-out">
+        <div id="loader" class="flex space-x-2">
+            <div class="w-4 h-4 bg-white rounded-full animate-ping"></div>
+            <div class="w-4 h-4 bg-white rounded-full animate-ping delay-200"></div>
+            <div class="w-4 h-4 bg-white rounded-full animate-ping delay-400"></div>
         </div>
     </div>
     
- <!-- Contact Section -->
-<div id="contact" class="py-20 text-center">
-    <h2 class="text-4xl font-medium">Get in Touch</h2>
-    <p class="text-gray-500 mt-4">Let's collaborate and create something amazing.</p>
-    <div class="mt-6">
-        <!-- Social Media Links -->
-        <a href="https://www.facebook.com/yourprofile" target="_blank" class="text-blue-600 hover:text-blue-800 mx-4">
-            <i class="fab fa-facebook fa-2x"></i>
-        </a>
-        <a href="https://github.com/yourprofile" target="_blank" class="text-gray-900 hover:text-gray-700 mx-4">
-            <i class="fab fa-github fa-2x"></i>
-        </a>
-        <a href="https://www.instagram.com/yourprofile" target="_blank" class="text-pink-600 hover:text-pink-800 mx-4">
-            <i class="fab fa-instagram fa-2x"></i>
-        </a>
+    
+    <div class="fixed top-0 left-0 w-full bg-white shadow-md py-4 px-8 flex justify-between items-center z-50">
+        <a href="#top" class="text-2xl font-bold">Webportfolio</a>
+        <nav class="hidden md:flex gap-6 text-lg">
+            <a href="#about" class="hover:text-blue-500 scroll-link">About</a>
+            <a href="#works" class="hover:text-blue-500 scroll-link">Works</a>
+            <a href="#contact" class="hover:text-blue-500 scroll-link">Contact</a>
+        </nav>
     </div>
-    <button class="mt-6 px-8 py-3 bg-black text-white font-medium rounded-lg hover:opacity-80 transition">Contact Me</button>
-</div>
+    
+    
+    <div  class="h-screen flex flex-col md:flex-row items-center justify-center px-8">
+        <div class="md:w-1/2 text-center md:text-left">
+            <h1 class="text-6xl font-bold">Atsadawut</h1>
+            <p class="text-lg text-gray-500 mt-4">Programmer</p>
+        </div>
+        <div class="md:w-1/2 flex justify-center">
+            <img src="/work/images/profile.png" id="profile-pic">
+        </div>
+    </div>
+    
+    <div id="about" class="py-20 px-8 text-center md:text-left">
+        <h2 class="text-4xl font-semibold">About Me</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto md:mx-0 mt-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam fugiat eaque veritatis, eveniet soluta nostrum! Odio sed, hic soluta dignissimos voluptatem voluptatum, laboriosam minus placeat dolores accusantium dicta necessitatibus ipsam.
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+            <div>
+                <h3 class="text-2xl font-medium">Experience</h3>
+                <ul class="list-disc list-inside text-gray-700 mt-2">
+                    <li>Frontend Developer 6 Mouth </li>
+                    <li>Excell</li>
+                    <li>adobe Canva</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-2xl font-medium">Skills</h3>
+                <ul class="list-disc list-inside text-gray-700 mt-2">
+                    <li>Gameming</li>
+                    <li>Cheating</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
-<!-- Font Awesome JS -->
-<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
-<!-- 
+    <div id="works" class="py-20 px-8 text-center">
+        <h2 class="text-4xl font-semibold">My works <br><br><br></h2>
+        <div class="grid grid-cols-2 md:grid-cols-2 gap-0 w-full max-w-screen-lg mx-auto overflow-hidden">
+            
+            <div class="relative group overflow-hidden">
+                <a href="work/ex1menu.html">
+                <img src="https://d3h1lg3ksw6i6b.cloudfront.net/media/image/2023/04/24/5608757681874e1ea5df1aa41d5b2e3d_How_To_Make_Tom_Yam_Kung_The_Epitome_Of_Delicious_And_Nutritious_Thai_Cuisine3.jpg" alt="Project" class="w-full h-full object-cover group-hover:blur-md transition duration-500">
+                <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500">
+                    <span class="bg-black text-white px-4 py-2 rounded-md">MENU HTML</span>
+                </div>
+            </a>
+            </div>
+            <div class="relative group overflow-hidden">
+                <a href="work/ex2Form.html">
+                <img src="https://st3.depositphotos.com/3591429/12864/i/950/depositphotos_128642652-stock-photo-people-filling-application-form.jpg" alt="Project" class="w-full h-full object-cover group-hover:blur-md transition duration-500">
+                <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500">
+                    <span class="bg-black text-white px-4 py-2 rounded-md">FORM HTML + CSS</span>
+                </div>
+            </a>
+            </div>
+            <div class="relative group overflow-hidden">
+                <a href="work/ex3Box_Model.html">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Boxmodell-detail.png" alt="Project" class="w-full h-full object-cover group-hover:blur-md transition duration-500">
+                <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500">
+                    <span class="bg-black text-white px-4 py-2 rounded-md">Box Model</span>
+                </div>
+            </a>
+            </div>
+            <div class="relative group overflow-hidden">
+                <a href="work/ex4menubuty.html">
+                <img src="https://d3h1lg3ksw6i6b.cloudfront.net/media/image/2023/04/24/5608757681874e1ea5df1aa41d5b2e3d_How_To_Make_Tom_Yam_Kung_The_Epitome_Of_Delicious_And_Nutritious_Thai_Cuisine3.jpg" alt="Project" class="w-full h-full object-cover group-hover:blur-md transition duration-500">
+                <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500">
+                    <span class="bg-black text-white px-4 py-2 rounded-md">Menu + Tailwind</span>
+                </div>
+            </a>
+            </div>
+        </div>
+    </div>
+    
+
+    <div id="contact" class="bg-black text-white py-10 text-center">
+        <h2 class="text-3xl font-semibold">ติดต่อได้ที่</h2>
+        <p class="text-gray-400 mt-2"></p>
+        <div class="mt-4 flex justify-center gap-4">
+            <a href="#" class="text-blue-500 hover:text-blue-300"><a href='https://www.facebook.com/yourprofile' target='_blank' class='text-blue-600 hover:text-blue-800'>Facebook</a></a>
+            <a href="#" class="text-gray-400 hover:text-white"><a href='https://www.instagram.com/yourprofile' target='_blank' class='text-pink-600 hover:text-pink-800'>Instagram</a></a>
+            <a href="#" class="text-gray-400 hover:text-white"><a href='https://github.com/yourprofile' target='_blank' class='text-gray-900 hover:text-gray-700'>GitHub</a></a>
+            <a href="#" class="text-blue-300 hover:text-blue-500">LinkedIn</a>
+        </div>
+    </div>
+    
     <script>
-        // JavaScript สำหรับการเลื่อนแบบสมูท
-        document.querySelectorAll('.scroll-link').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelectorAll('.scroll-link').forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
                 });
             });
         });
-    </script> --> 
+
+        window.addEventListener("load", function () {
+            setTimeout(() => {
+                document.getElementById("preloader").classList.add("opacity-0", "invisible");
+            }, 900);
+        });
+    </script>
+    
 </body>
 </html>
