@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* เฟด */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(-10px);
+            animation: fadeIn 1s ease-in-out forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex items-center justify-center h-screen font-sans">
+    
+    <div class="text-center fade-in">
+        <div class="w-20 h-20 mx-auto mb-4">
+            <img src="https://scontent.furt3-1.fna.fbcdn.net/v/t39.30808-6/451351985_1636110373599519_6999807592954446378_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeHEnB0wP3z2XQbmFIpHuUdDk4iQM_FbD72TiJAz8VsPvfEubuEWDudEOhDmjbC76FsGaWcuvmulcqSxeHQloGSi&_nc_ohc=a4MSTV0BKeIQ7kNvgEUDR2Y&_nc_oc=AdgdOxk9aVw-rQbtxvIxxrcDW_MfM31k0829r3g-HCYZ0KU8pT0J3mWhKcZXFh5aI9tS0XsxpHYxyeiNMCk6yo7K&_nc_zt=23&_nc_ht=scontent.furt3-1.fna&_nc_gid=ATraPoCzCyWLG6CKToqvMPM&oh=00_AYDHy6zVAjeSfe-KzpHyVIAnuMMdZ9CM_W99u-J7IArm9w&oe=67B8FDAB" class="rounded-full shadow-md" alt="Profile">
+        </div>
+
+        <h2 class="text-2xl font-semibold mb-4 text-gray-900">Welcome</h2>
+        <form action="#" class="space-y-4">
+            <div>
+                <input type="text" placeholder="Username" class="w-full px-4 py-2 border border-gray-400 rounded-lg bg-white text-gray-900 focus:ring-2 focus:ring-gray-600 outline-none">
+            </div>
+            <div>
+                <input type="password" placeholder="Password" class="w-full px-4 py-2 border border-gray-400 rounded-lg bg-white text-gray-900 focus:ring-2 focus:ring-gray-600 outline-none">
+            </div>
+            <button class="w-full bg-black text-white py-2 rounded-lg hover:bg-gray-800 transition duration-300" >
+                LOGIN
+            </button>
+        </form>
+        <div class="mt-4 text-sm">
+            <a href="#" class="text-gray-600 hover:text-black transition">Forgot Password?</a>
+        </div>
+        <div class="mt-2 text-sm">
+            <span class="text-gray-600">Don't have an account?</span>
+            <a href="#" class="text-gray-600 hover:text-black transition">Sign up</a>
+        </div>
+    </div>
+
+</body>
+</html>
